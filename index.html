@@ -8,14 +8,17 @@
   <script src="app.js"></script>
   <script src="controllers/CoursesController.js"></script>
   <script src="controllers/StudentsController.js"></script>
+  <script src="controllers/HeadersController.js"></script>
   <script src="services/UtilitiesFactory.js"></script>
   <script src="services/CoursesFactory.js"></script>
+  <script src="directives/courseDirectives.js"></script>
   <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
   <div class="container">
 <!-- all views rendered into this div "ui-view" -->
-    <div ui-view></div>
+    <div ui-view="header"></div>
+    <div ui-view="body"></div>
   </div>
 </body>
 </html>
