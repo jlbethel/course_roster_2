@@ -3,4 +3,9 @@ courseRoster.controller('CoursesCtrl', function CoursesCtrl($scope, CoursesFacto
   $scope.CoursesFactory = CoursesFactory;
 
   $scope.ctrlCourseName = "science";
+
+  $scope.alert = function(message) {
+    alert(message)
+  }
+
 });
